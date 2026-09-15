@@ -7,6 +7,7 @@
   <title>Anton Waldron | Financial Mathematics</title>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
 
   <style>
     :root {
@@ -274,23 +275,29 @@
             <h4>About the project</h4>
       
             <p>
-              Standard Monte Carlo simulation can require a very large number of
-              sample paths to produce an accurate option-price estimate. Multilevel
-              Monte Carlo reduces this computational cost by combining simulations
-              from several levels of numerical resolution. Many inexpensive,
-              low-resolution paths are used alongside progressively fewer expensive,
-              high-resolution paths.
+              In applications, standard Monte Carlo is sometimes referred to as
+              brute-force Monte Carlo, reflecting the substantial computational cost of
+              obtaining accurate estimates. This is particularly relevant in option
+              pricing, where a large number of sample paths may be required. Multilevel
+              Monte Carlo (MLMC) addresses this problem by repeatedly applying the identity
+              \(\mathbb{E}[X] = \mathbb{E}[Y] + \mathbb{E}[X-Y]\). This produces a
+              telescoping decomposition in which estimates calculated on inexpensive,
+              coarse levels are successively corrected using the differences between
+              adjacent levels. An accessible illustration is provided in the poster,
+              where MLMC is used to estimate the constant \(\pi\).
             </p>
-      
+            
             <p>
-              I implemented the method in MATLAB and investigated how it could be
-              adapted to different option types. Milstein discretisation and Brownian
-              bridges were applied to lookback options, producing an efficiency
-              improvement of up to 136 times over standard Monte Carlo at low RMSE
-              targets. I also combined MLMC with Least Squares Monte Carlo for
-              American options, achieving an improvement of up to approximately
-              two times.
+              I implemented MLMC in MATLAB and investigated how the method could be adapted
+              to different option types and payoff structures. Milstein discretisation and
+              Brownian bridges were applied to lookback options, producing an efficiency
+              improvement of up to 136 times over standard Monte Carlo at low RMSE targets.
+              I also combined MLMC with Least Squares Monte Carlo for American options,
+              achieving an improvement of up to approximately two times. The project
+              further developed my understanding of Monte Carlo pricing for a range of
+              options under the Black–Scholes and Heston models.
             </p>
+
       
             <div class="tags">
               <span class="tag">MATLAB</span>
@@ -327,8 +334,7 @@
             <span class="tag">Numerical Methods</span>
           </div>
           <footer>
-            <!-- Replace # with the report or GitHub link when it is ready. -->
-            <a href="#">View project →</a>
+            <a href="https://github.com/AntonWaldron/MultilevelMonteCarloMethods">View project →</a>
           </footer>
         </article>
       </div>
