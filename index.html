@@ -231,15 +231,14 @@
       <h1>Anton Waldron</h1>
       <p class="intro">
         First Class Honours Financial Mathematics graduate from the University of
-        Limerick, interested in quantitative finance, statistical modelling and
-        machine learning.
+        Limerick, with interests in statistical and mathematical modelling, quantitative finance and data analysis. 
       </p>
 
       <div class="actions">
         <!-- Replace the three placeholder values below with your real links. -->
-        <a href="YOUR_GITHUB_URL" role="button">GitHub</a>
-        <a href="YOUR_LINKEDIN_URL" role="button" class="secondary">LinkedIn</a>
-        <a href="mailto:YOUR_EMAIL" role="button" class="outline">Email</a>
+        <a href="https://github.com/Antonwaldron" role="button">GitHub</a>
+        <a href="https://www.linkedin.com/in/antonwaldron/" role="button" class="secondary">LinkedIn</a>
+        <a href="mailto:1antonwaldron@gmail.com" role="button" class="outline">Email</a>
       </div>
     </header>
 
@@ -248,30 +247,71 @@
         <p class="eyebrow">Featured work</p>
         <h2>Research</h2>
         <p>
-          Selected research in computational finance, stochastic control and
-          reinforcement learning.
+          I have two research projects to showcase, my final year project in computational finance and my summer research
+          project in reinforcement learning for a stochastic control problem with applications in quantitative finance. 
         </p>
       </div>
 
       <div class="project-grid">
-        <article class="project-card">
-          <h3>Learning No-Trade Regions with Q-Learning</h3>
-          <p>
-            A comparison of tabular Q-learning and deep Q-learning for identifying
-            optimal no-trade regions in one- and two-dimensional Bachelier models
-            with proportional transaction costs.
+        <article class="fyp-feature" id="fyp">
+
+        <!-- Full-width first row -->
+        <header class="fyp-header">
+          <p class="eyebrow">Final-year project</p>
+          <h3>Multilevel Monte Carlo Methods for Option Pricing</h3>
+      
+          <p class="fyp-summary">
+            An investigation of multilevel Monte Carlo methods as a more
+            computationally efficient approach to pricing European, American,
+            Asian, lookback and digital options.
           </p>
-          <div class="tags">
-            <span class="tag">Python</span>
-            <span class="tag">PyTorch</span>
-            <span class="tag">Reinforcement Learning</span>
-            <span class="tag">Stochastic Control</span>
+        </header>
+      
+        <!-- Second row: description on left, poster on right -->
+        <div class="fyp-content">
+      
+          <div class="fyp-description">
+            <h4>About the project</h4>
+      
+            <p>
+              Standard Monte Carlo simulation can require a very large number of
+              sample paths to produce an accurate option-price estimate. Multilevel
+              Monte Carlo reduces this computational cost by combining simulations
+              from several levels of numerical resolution. Many inexpensive,
+              low-resolution paths are used alongside progressively fewer expensive,
+              high-resolution paths.
+            </p>
+      
+            <p>
+              I implemented the method in MATLAB and investigated how it could be
+              adapted to different option types. Milstein discretisation and Brownian
+              bridges were applied to lookback options, producing an efficiency
+              improvement of up to 136 times over standard Monte Carlo at low RMSE
+              targets. I also combined MLMC with Least Squares Monte Carlo for
+              American options, achieving an improvement of up to approximately
+              two times.
+            </p>
+      
+            <div class="tags">
+              <span class="tag">MATLAB</span>
+              <span class="tag">Option Pricing</span>
+              <span class="tag">Monte Carlo</span>
+              <span class="tag">Numerical Methods</span>
+            </div>
           </div>
-          <footer>
-            <!-- Replace # with the paper or GitHub link when it is ready. -->
-            <a href="#">View project →</a>
-          </footer>
-        </article>
+      
+          <figure class="fyp-poster">
+            <img
+              src="fyp-poster.png"
+              alt="Poster presenting the results of the Multilevel Monte Carlo Methods for Option Pricing project">
+            <figcaption>
+              Final-year project poster, University of Limerick.
+            </figcaption>
+          </figure>
+      
+        </div>
+      
+      </article>
 
         <article class="project-card">
           <h3>Multilevel Monte Carlo for Option Pricing</h3>
@@ -299,8 +339,8 @@
         <p class="eyebrow">Selected work</p>
         <h2>Projects</h2>
         <p>
-          Additional work in quantitative finance, statistics and applied
-          programming will be added here.
+          Additional work in statistics, applied mathematics and reinforcement learning, primarily in
+          the form of university projects. 
         </p>
       </div>
 
