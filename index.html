@@ -210,6 +210,11 @@
         gap: 0.4rem;
       }
     }
+    .python-project-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
   </style>
 </head>
 
@@ -228,7 +233,7 @@
 
   <main class="container">
     <header class="hero">
-      <p class="eyebrow">Financial Mathematics · Quantitative Research</p>
+      <p class="eyebrow">Financial Mathematics · Statistical Modelling · Computational Finance </p>
       <h1>Anton Waldron</h1>
       <p class="intro">
         First Class Honours Financial Mathematics graduate from the University of
@@ -353,23 +358,81 @@
         <p class="eyebrow">Selected work</p>
         <h2>Projects</h2>
         <p>
-          Additional work in statistics, applied mathematics and reinforcement learning, primarily in
-          the form of university projects. 
+          These are projects from college and a few side projects with a main focus on machine learning, statistics and
+          data analysis. 
         </p>
       </div>
 
-      <article class="project-card">
-        <h3>Quantitative Python Projects</h3>
-        <p>
-          A developing collection of practical projects in financial data analysis,
-          risk modelling and quantitative research.
-        </p>
-        <div class="tags">
-          <span class="tag">Python</span>
-          <span class="tag">Statistics</span>
-          <span class="tag">Financial Data</span>
-        </div>
-      </article>
+      <div class="python-project-list">
+
+        <article class="project-card">
+          <h3>Time Series Forecast for Darts Interest</h3>
+          <p>
+            A time series project analysing and forecasting interest in darts using
+            historical data and statistical forecasting methods.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Time Series</span>
+            <span class="tag">Forecasting</span>
+          </div>
+        </article>
+      
+        <article class="project-card">
+          <h3>Linear Regression Project</h3>
+          <p>
+            A statistical modelling project using linear regression to investigate
+            relationships within real-world data and assess the explanatory power
+            of different variables.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Linear Regression</span>
+            <span class="tag">Statistics</span>
+          </div>
+        </article>
+      
+        <article class="project-card">
+          <h3>Does Aim Training Improve Rank in Valorant?</h3>
+          <p>
+            A data analysis project investigating whether aim-training performance
+            is associated with competitive rank in the video game Valorant.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Data Analysis</span>
+            <span class="tag">Statistics</span>
+          </div>
+        </article>
+      
+        <article class="project-card">
+          <h3>Predicting Life Expectancy with Linear Regression and Machine Learning</h3>
+          <p>
+            A predictive modelling project comparing linear regression with machine
+            learning methods for predicting life expectancy from socioeconomic and
+            health-related variables.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Regression</span>
+          </div>
+        </article>
+      
+        <article class="project-card">
+          <h3>Recognising Erik ten Hag with fastai</h3>
+          <p>
+            An image classification project using fastai and transfer learning to
+            train a model to recognise images of Erik ten Hag.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">fastai</span>
+            <span class="tag">Computer Vision</span>
+          </div>
+        </article>
+      
+      </div>
     </section>
 
     <section id="experience">
