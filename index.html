@@ -368,39 +368,72 @@
         <article class="project-card">
           <h3>Time Series Forecast for Darts Interest</h3>
           <p>
-            A time series project analysing and forecasting interest in darts using
-            historical data and statistical forecasting methods.
+            Inspired by Luke Littler's rise to fame, our group decided to choose 'Interest', defined by Google searches, 
+            as our Time Series for this project. Upon analysis of the series, it is clear that it is not stationary and a
+            Box-Cox transform is applied to stabilise the variance. However, this results in the series exhibiting a negative
+            trend and first order differencing is required, still the series exhibits a seasonal trend and thus a seasonal
+            differencing is required. The result is a stationary series and upon analysis of the ACF and PACF plots we deduce 
+            that an \( \operatorname{ARIMA}(0,1,1)\times(0,1,1)_{12} \) model is optimal. Further analysis can be found in the 
+            at the below link. 
           </p>
           <div class="tags">
             <span class="tag">Python</span>
             <span class="tag">Time Series</span>
             <span class="tag">Forecasting</span>
           </div>
+           <footer>
+              <a href="https://github.com/AntonWaldron/TimeSeries"
+                 target="_blank"
+                 rel="noopener noreferrer">
+                View Project on Github -> 
+              </a>
+            </footer>
         </article>
       
         <article class="project-card">
-          <h3>Linear Regression Project</h3>
+          <h3>Predicting Bike Rentals with Linear Regression</h3>
           <p>
-            A statistical modelling project using linear regression to investigate
-            relationships within real-world data and assess the explanatory power
-            of different variables.
+            This was a class project from the Advanced Data Analysis module. In the first section, we were each given a specific set
+            of variables to analyse. Mine were the Season, Hour, Rain and Tempurature, and I visually assessed their 
+            relationship with the number of bike rentals. 
+            
+            In the next section, we were given the freedom to fit our own linear regression model.
+            Through visual analysis and exploration of the variable space, I identified that there was a statistically significant
+            interaction between the continuous variable humidity and the indicator variable <code>is_weekend</code>;.
+            This makes sense intuitively, as during the week many people likely rent a bike for essential transport, whereas 
+            weekend rentals are likely more discretionary and therefore more sensitive to weather conditions. 
+            
+            The final model included humidity, time of day, the season, whether it was raining, and 
+            the interaction term between humidity and the weekend status. Analysis of the residuals showed
+            that they were approximately normally distributed.  
           </p>
           <div class="tags">
-            <span class="tag">Python</span>
+            <span class="tag">R</span>
             <span class="tag">Linear Regression</span>
-            <span class="tag">Statistics</span>
+            <span class="tag">Exploratory Data Analysis</span>
           </div>
         </article>
       
         <article class="project-card">
-          <h3>Does Aim Training Improve Rank in Valorant?</h3>
+          <h3>Is the deliberate practice method of "Aim Training" associated with a higher rank in the competitive videogame Valorant?</h3>
           <p>
-            A data analysis project investigating whether aim-training performance
-            is associated with competitive rank in the video game Valorant.
+            This was a very fun project to do; at the time I was interested in both competitive gaming and the concept of deliberate practice, having
+            recently read Geoff Calvin's book 'Talent is Overrated'. Therefore I was genuinely interested in the question of whether or not Aim Training 
+            (the practice of using external software to get better at "aiming" i.e. moving your mouse to click on objects on the screen), a deliberate practice
+            technique, was predictive of rank. To answer this question I collected data using the following survey: 
+            1. What is your current Valorant rank? 
+            2. How many hours have you played in aim training software?
+            3. A Likert scale of experience prior to playing Valorant.
+            4. How many hours have you played in Valorant? 
+            Using a Chi-Square test I was able to determine that there was a statistically significant difference between the ranks of "Aim Trainers" (defined
+            as having played more than 50 hours in aim training software) and non-"Aim Trainers". 
+            The goal was to perform an ANOVA but due to a violation of the assumption of normality, a Kruskal-Wallis test was used instead which indicated
+            a statistically significant difference in median aim training times across ranks in Valorant, however subsequent Mann-Whitney U Test's did not 
+            reveal a statistically significant difference between specific ranks. 
           </p>
           <div class="tags">
-            <span class="tag">Python</span>
-            <span class="tag">Data Analysis</span>
+            <span class="tag">Survey Design</span>
+            <span class="tag">Academic Writing</span>
             <span class="tag">Statistics</span>
           </div>
         </article>
@@ -408,9 +441,8 @@
         <article class="project-card">
           <h3>Predicting Life Expectancy with Linear Regression and Machine Learning</h3>
           <p>
-            A predictive modelling project comparing linear regression with machine
-            learning methods for predicting life expectancy from socioeconomic and
-            health-related variables.
+            In this project I compared Linear Regression, Random Forests and Regression Trees for the task of predicting
+            the Life Expectancy of country's in a World Health Organization (WHO) dataset. 
           </p>
           <div class="tags">
             <span class="tag">Python</span>
